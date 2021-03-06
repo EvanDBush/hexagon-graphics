@@ -1,17 +1,21 @@
 //Testing 123
 // Hexagon ABCDEF
 
+const center = [150, 150];
+const radius = 50;
+const hexagon =[pointA, pointB, pointC, pointD, pointE, pointF];
+
 function getPointA (center, radius) {
     var x = center[0];
     var y = center[1];
     
     x += -radius/2;
-    y += Math.round(radius * .8660)
+    y += Math.round(radius * .8660);
 
-    console.log([x, y]);
-}
+    const pointA = (x,y);
 
-getPointA ([100, 100], 100);
+    console.log(x,y);
+};
 
 function getPointB (center, radius) {
     var x = center[0];
@@ -20,56 +24,63 @@ function getPointB (center, radius) {
     x += radius/2;
     y += Math.round(radius * .8660)
 
-    console.log([x, y]);
-}
+    const pointB = (x,y);
 
-getPointB ([100, 100], 100);
+    console.log([x, y]);
+};
+
 
 function getPointC (center, radius) {
     var x = center[0];
     var y = center[1];
     
-    x += radius; 
+    x += radius;
+    
+    const pointC = (x,y);
 
     console.log([x, y]);
-}
-
-getPointC ([100, 100], 100);
+};
 
 function getPointD (center, radius) {
     var x = center[0];
     var y = center[1];
     
     x += radius/2;
-    y += Math.round(-radius * .8660)
+    y += Math.round(-radius * .8660);
+
+    const pointD = (x,y);
 
     console.log([x, y]);
-}
+};
 
-getPointD ([100, 100], 100);
+
 
 function getPointE (center, radius) {
     var x = center[0];
     var y = center[1];
     
     x += -radius/2;
-    y += Math.round(-radius * .8660)
+    y += Math.round(-radius * .8660);
+
+    const pointE = (x,y);
 
     console.log([x, y]);
-}
-
-getPointE ([100, 100], 100);
+};
 
 function getPointF (center, radius) {
     var x = center[0];
     var y = center[1];
     
-    x += -radius
+    x += -radius;
+
+    const pointF = (x,y);
 
     console.log([x, y]);
-}
+};
 
-getPointF ([100, 100], 100);
+console.log(hexagon);
+
+
 
 // generate new centers for adjacent hexagons
 
@@ -83,9 +94,7 @@ function getPointG (center, radius) {
     y += Math.round(2 * radius * .8660)
 
     console.log([x, y]);
-}
-
-getPointG ([100, 100], 100);
+};
 
 function getPointH (center, radius) {
     var x = center[0];
@@ -95,9 +104,7 @@ function getPointH (center, radius) {
     y += Math.round(radius * .8660)
 
     console.log([x, y]);
-}
-
-getPointH ([100, 100], 100);
+};
 
 function getPointI (center, radius) {
     var x = center[0];
@@ -107,9 +114,7 @@ function getPointI (center, radius) {
     y += -(Math.round(radius * .8660)); 
 
     console.log([x, y]);
-}
-
-getPointI ([100, 100], 100);
+};
 
 function getPointJ (center, radius) {
     var x = center[0];
@@ -118,9 +123,7 @@ function getPointJ (center, radius) {
     y += -(Math.round(2 * radius * .8660));
 
     console.log([x, y]);
-}
-
-getPointJ ([100, 100], 100);
+};
 
 function getPointK (center, radius) {
     var x = center[0];
@@ -130,19 +133,16 @@ function getPointK (center, radius) {
     y += -(Math.round(2 * radius * .8660));
 
     console.log([x, y]);
-}
-
-getPointK ([100, 100], 100);
+};
 
 function getPointL (center, radius) {
     var x = center[0];
     var y = center[1];
     
     x += -1.5 * radius;
-    y += radius * .8660;
+    y += Math.round(radius * .8660);
 
     console.log([x, y]);
-}
+};
 
-getPointL ([100, 100], 100);
 
