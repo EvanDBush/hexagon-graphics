@@ -32,40 +32,19 @@ function getHexPoints (center, radius) {
     
     let hexagon = [pointA, pointB, pointC, pointD, pointE, pointF];
 
+    let coordinates = hexagon.join(' ')
     
+    let stringSyntax = '<polygon points= ' + '"' + coordinates + '" />';
 
-console.log(hexagon)
+console.log(hexagon);
+console.log(coordinates);
+
+return(stringSyntax);
+
 };
 
-// Draw a Morel
 
 console.log("uno");
 
 getHexPoints([150, 38], 29);
-
-console.log("dubs");
-
-getHexPoints([75, 96], 29);
-getHexPoints([125, 96], 29);
-
-console.log("trips");
-
-getHexPoints([50, 125], 29);
-getHexPoints([100, 125], 29);
-getHexPoints([150, 125], 29);
-
-console.log("quads");
-
-getHexPoints([25, 154], 29);
-getHexPoints([75, 154], 29);
-getHexPoints([125, 154], 29);
-getHexPoints([150, 154], 29);
-
-
-console.log("base");
-
-getHexPoints([50, 212], 29);
-getHexPoints([100, 212], 29);
-getHexPoints([150, 212], 29);
-
 

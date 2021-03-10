@@ -8,28 +8,28 @@ function getHexPoints (center, radius) {
 
     let pointA = 
     
-    [x += -radius/2,
-    y += Math.round(radius * .8660)];
+    [x + -radius/2,
+    y + Math.round(radius * .8660)];
     
 
     let pointB =
-    [x += radius/2,
-    y += Math.round(radius * .8660)];
+    [x + radius/2,
+    y + Math.round(radius * .8660)];
 
     let pointC = 
-    [x += radius, y];
+    [x + radius, y];
 
     let pointD =
-    [x += radius/2,
-    y += Math.round(-radius * .8660)];
+    [x + radius/2,
+    y + Math.round(-radius * .8660)];
 
 
     let pointE =
-    [x += -radius/2,
-    y += Math.round(-radius * .8660)];
+    [x + -radius/2,
+    y + Math.round(-radius * .8660)];
 
     let pointF =
-    [x += -radius, y];
+    [x + -radius, y];
     
     let hexagon = [pointA, pointB, pointC, pointD, pointE, pointF];
 
